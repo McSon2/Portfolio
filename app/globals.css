@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-vellum: #fffcf0;
+  --color-terminal-black: #000000;
+  --color-deep-graphite: #000310;
+  --color-sky-blue-indicator: #007aff;
+
+  --color-background: #fffcf0;
+  --color-foreground: #000000;
+  --color-border: #000000;
+
+  --font-sans: var(--font-neue-montreal), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-ldd), ui-monospace, "Press Start 2P", monospace;
+
+  --text-caption: 12px;
+  --text-body: 16px;
+  --text-display: clamp(48px, 14vw, 135px);
+  --text-display-sm: clamp(32px, 8vw, 72px);
+  --leading-display: 1;
+
+  --spacing-15: 15px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-58: 58px;
+  --spacing-200: 200px;
+
+  --radius: 0px;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  html,
+  body {
+    background: var(--color-cream-vellum);
+    color: var(--color-terminal-black);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background: #000;
+    color: #fffcf0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+    line-height: var(--leading-display);
+  }
+  .text-display {
+    font-size: var(--text-display);
+    line-height: var(--leading-display);
+  }
+  .text-display-sm {
+    font-size: var(--text-display-sm);
+    line-height: var(--leading-display);
+  }
+  .text-caption {
+    font-size: var(--text-caption);
+    line-height: 1;
+  }
+  .text-body {
+    font-size: var(--text-body);
+    line-height: 1.4;
+  }
+  .blink-caret::after {
+    content: "▌";
+    display: inline-block;
+    animation: blink 1s steps(2, start) infinite;
+    margin-left: 0.05em;
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  .section-divider {
+    border-top: 1.5px solid var(--color-terminal-black);
+    width: 100%;
+  }
+  .glitch-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+}
+
+@keyframes pixel-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 320ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
