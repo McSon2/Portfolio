@@ -85,14 +85,24 @@
     line-height: 1.4;
   }
   .blink-caret::after {
-    content: "▌";
+    content: "";
     display: inline-block;
-    animation: blink 1s steps(2, start) infinite;
-    margin-left: 0.05em;
+    width: 0.13em;
+    height: 0.88em;
+    background: currentColor;
+    vertical-align: baseline;
+    margin-left: 0.12em;
+    animation: blink 1s step-end infinite;
   }
   @keyframes blink {
-    to {
-      visibility: hidden;
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
   .section-divider {
