@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const APP_NAME = "RhumArrangé";
 const PUBLISHER = "Maxime Saltet";
-const CONTACT_EMAIL = "maximesaltet@hotmail.fr";
+const CONTACT_EMAIL = "maximesaltet@gmail.com";
 const LAST_UPDATED = "6 mai 2026";
 const URL = "https://maximesaltet.com/RhumArrange/privacy";
 
