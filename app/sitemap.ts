@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://maximesaltet.com/icelog/privacy",
+      url: "https://maximesaltet.com/coldkeeper/privacy",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.4,

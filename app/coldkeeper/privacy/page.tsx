@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const LAST_UPDATED = "May 6, 2026";
-const APP_NAME = "IceLog";
+const APP_NAME = "ColdKeeper";
 const DEVELOPER = "Maxime Saltet";
 const CONTACT_EMAIL = "hello@maximesaltet.com";
 
 export const metadata: Metadata = {
-  title: "IceLog — Privacy Policy",
+  title: "ColdKeeper — Privacy Policy",
   description:
-    "Privacy policy for IceLog, an iOS app for tracking ice baths, cold showers and cold therapy sessions. We do not collect, store or share personal data.",
+    "Privacy policy for ColdKeeper, an iOS app for tracking ice baths, cold showers and cold therapy sessions. We do not collect, store or share personal data.",
   alternates: {
-    canonical: "https://maximesaltet.com/icelog/privacy",
+    canonical: "https://maximesaltet.com/coldkeeper/privacy",
   },
   robots: { index: true, follow: true },
 };
 
-export default function IceLogPrivacy() {
+export default function ColdKeeperPrivacy() {
   return (
     <div className="min-h-screen flex flex-col">
       <PrivacyHeader />
@@ -24,7 +24,7 @@ export default function IceLogPrivacy() {
       <main className="flex-1 mx-auto w-full max-w-[900px] px-[30px] py-[58px]">
         <div className="mb-[58px]">
           <p className="text-caption uppercase tracking-wider mb-[15px]">
-            IceLog · Legal
+            ColdKeeper · Legal
           </p>
           <h1 className="font-display text-display-sm">PRIVACY</h1>
           <p className="text-body mt-[15px] opacity-70">
@@ -90,7 +90,7 @@ export default function IceLogPrivacy() {
             </p>
             <p>
               You can revoke this permission at any time from the iOS Settings
-              app, under <em>Privacy &amp; Security → Health → IceLog</em>.
+              app, under <em>Privacy &amp; Security → Health → ColdKeeper</em>.
             </p>
           </Section>
 
@@ -225,9 +225,9 @@ function PrivacyHeader() {
         </Link>
         <span
           className="font-display text-caption hidden md:inline-block"
-          aria-label="IceLog Privacy Policy"
+          aria-label="ColdKeeper Privacy Policy"
         >
-          ICELOG / PRIVACY
+          COLDKEEPER / PRIVACY
         </span>
         <a
           href={`mailto:${CONTACT_EMAIL}`}
