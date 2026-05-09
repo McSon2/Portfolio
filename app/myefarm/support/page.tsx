@@ -162,6 +162,20 @@ export default function MyEFarmSupportPage() {
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
+            Can I buy more animals?
+          </h3>
+          <p>
+            Yes — the Marché has an &ldquo;Acheter des animaux&rdquo; section
+            with fixed prices: <strong>poussin 50 écus, lapereau 35 écus,
+            poule adulte 160 écus, coq adulte 200 écus, lapin adulte 120
+            écus</strong>. Young animals (poussins, lapereaux) are cheaper
+            but take 3 days to mature. Adult animals are immediately
+            productive but cost more. Capacity caps: 15 in the poulailler,
+            20 in the clapier. The system slightly biases purchased rabbit
+            genders to keep your breeding pair balanced.
+          </p>
+
+          <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
             How long does it take to clear level 1 for free?
           </h3>
           <p>
