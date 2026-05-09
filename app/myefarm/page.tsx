@@ -78,13 +78,15 @@ export default function MyEFarmPage() {
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
-            A daily decision, not a calculation
+            A simple market, no spreadsheet required
           </h3>
           <p>
-            Market prices wiggle every day — eggs at 4-6 écus, milk at 3-5,
-            adult animals at 50-140. A small badge tells you{" "}
-            <em>bas / normal / haut</em>. You can ignore it and still
-            progress, or time your sales for an extra coin or two.
+            Fixed prices — eggs at 5 écus, milk at 4, hens at 100, roosters
+            at 120, rabbits at 70. Two tabs: <em>Acheter</em> for buying
+            young or adult animals and supplies, <em>Vendre</em> for
+            offloading your production and excess animals. No daily
+            wiggle, no waiting for &ldquo;the right moment&rdquo; — just
+            tap and sell.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">

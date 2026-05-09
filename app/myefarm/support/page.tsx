@@ -112,10 +112,13 @@ export default function MyEFarmSupportPage() {
             How do I heal a sick animal?
           </h3>
           <p>
-            Tap the red <em>Soigner</em> button below the sick animal&rsquo;s
-            portrait. It costs 50 écus for a chick or baby rabbit, 75 for a
-            hen / rooster / adult rabbit, and 150 for the cow. The animal
-            instantly recovers and resumes its cycle.
+            Healing consumes <strong>1 trousse de soins</strong> (med kit)
+            from your stock, regardless of the animal&rsquo;s size. Buy
+            trousses at the marché (tab <em>Acheter</em>) by the pack of 3
+            for 180 écus (60 écus per trousse). Tap the red{" "}
+            <em>Soigner</em> button below the sick animal — it&rsquo;s
+            disabled if you have no trousse left. The animal instantly
+            recovers and resumes its cycle.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
@@ -144,11 +147,12 @@ export default function MyEFarmSupportPage() {
             How do market prices work?
           </h3>
           <p>
-            Prices are rolled fresh each day inside their range: eggs 4-6
-            écus, milk 3-5, hens 80-120, roosters 100-140, rabbits 50-90.
-            Each price gets a <em>bas / normal / haut</em> badge so you can
-            decide whether to sell now or wait. The badges are advisory —
-            you can ignore them and still progress.
+            Prices are <strong>fixed</strong>, no daily variation: eggs
+            sell for 5 écus, milk for 4, hens for 100, roosters for 120,
+            rabbits for 70. The Marché has two tabs — <em>Acheter</em>{" "}
+            (animals + supplies) and <em>Vendre</em> (productions + adult
+            animals). Sell whenever you have inventory, no need to time
+            anything.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
