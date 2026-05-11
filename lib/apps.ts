@@ -89,6 +89,15 @@ export const iosApps: IosApp[] = [
     language: "fr",
     year: "2026",
   },
+  {
+    slug: "FlashDesk",
+    name: "FlashDesk",
+    tagline:
+      "Carnet de bord pour tatoueurs indépendants — flashs, clients, agenda, devis et traçabilité encres ARS.",
+    category: "Business",
+    language: "fr",
+    year: "2026",
+  },
 ];
 
 export function getOtherApps(currentSlug: string): IosApp[] {
