@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "DadCoPilot";
 const PUBLISHER = "Maxime Saltet";
@@ -225,6 +226,7 @@ export default function DadCoPilotPage() {
         <p className="mt-[58px] text-caption uppercase tracking-wider opacity-60">
           © {new Date().getFullYear()} — {PUBLISHER}
         </p>
+        <CrossAppNav currentSlug="dadcopilot" />
       </main>
       <Footer />
     </>

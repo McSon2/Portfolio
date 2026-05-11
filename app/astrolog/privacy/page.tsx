@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const TITLE = "AstroLog — Privacy Policy";
 const DESCRIPTION =
@@ -157,6 +158,7 @@ export default function AstroLogPrivacyPage() {
             maximesaltet.com
           </a>
         </p>
+        <CrossAppNav currentSlug="astrolog" />
       </main>
       <Footer />
     </>

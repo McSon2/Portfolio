@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const LAST_UPDATED = "May 8, 2026";
 const APP_NAME = "PomoStudy";
@@ -163,6 +164,7 @@ export default function PomoStudyPrivacy() {
             ← Back to maximesaltet.com
           </Link>
         </div>
+        <CrossAppNav currentSlug="pomostudy" />
       </main>
 
       <footer

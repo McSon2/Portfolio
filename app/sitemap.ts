@@ -9,16 +9,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://maximesaltet.com/apps",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://maximesaltet.com/RhumArrange",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://maximesaltet.com/RhumArrange/privacy",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
     },
     {
+      url: "https://maximesaltet.com/RhumArrange/support",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: "https://maximesaltet.com/coldkeeper",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://maximesaltet.com/coldkeeper/privacy",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.4,
+    },
+    {
+      url: "https://maximesaltet.com/coldkeeper/support",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
     {
       url: "https://maximesaltet.com/WhiskyVault",
@@ -39,9 +69,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: "https://maximesaltet.com/brewly",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://maximesaltet.com/brewly/privacy",
       lastModified: new Date(),
       changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://maximesaltet.com/brewly/support",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
       priority: 0.5,
     },
     {

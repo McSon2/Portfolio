@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const LAST_UPDATED = "May 11, 2026";
 const APP_NAME = "DadCoPilot";
@@ -208,6 +209,7 @@ export default function DadCoPilotPrivacy() {
             ← Back to maximesaltet.com
           </Link>
         </div>
+        <CrossAppNav currentSlug="dadcopilot" />
       </main>
 
       <footer

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const LAST_UPDATED = "May 6, 2026";
 const APP_NAME = "ColdKeeper";
@@ -174,6 +175,7 @@ export default function ColdKeeperPrivacy() {
             ← Back to maximesaltet.com
           </Link>
         </div>
+        <CrossAppNav currentSlug="coldkeeper" />
       </main>
 
       <footer

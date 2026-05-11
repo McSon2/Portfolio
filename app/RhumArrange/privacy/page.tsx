@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "RhumArrangé";
 const PUBLISHER = "Maxime Saltet";
@@ -214,6 +215,7 @@ export default function PrivacyPage() {
           © {new Date().getFullYear()} — {PUBLISHER}
         </p>
       </footer>
+      <CrossAppNav currentSlug="RhumArrange" heading="Autres apps de Maxime" />
     </main>
   );
 }

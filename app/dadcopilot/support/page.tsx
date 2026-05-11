@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "DadCoPilot";
 const FALLBACK_EMAIL = "maximesaltet@gmail.com";
@@ -368,6 +369,7 @@ export default function DadCoPilotSupportPage() {
             {APP_NAME}
           </Link>
         </p>
+        <CrossAppNav currentSlug="dadcopilot" />
       </main>
       <Footer />
     </>

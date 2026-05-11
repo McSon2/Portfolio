@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "Brewly";
 const CONTACT_EMAIL = "maximesaltet.brewly@gmail.com";
@@ -300,6 +301,7 @@ export default function BrewlySupportPage() {
             {APP_NAME}
           </Link>
         </p>
+        <CrossAppNav currentSlug="brewly" />
       </main>
       <Footer />
     </>
