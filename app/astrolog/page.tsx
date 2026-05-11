@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 
 const APP_NAME = "AstroLog";
 const PUBLISHER = "Maxime Saltet";
-const CONTACT_EMAIL = "maximesaltet@hotmail.fr";
+const CONTACT_EMAIL = "maximesaltet@gmail.com";
 const URL = "https://maximesaltet.com/astrolog";
 // const APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXX";
 

@@ -6,7 +6,7 @@ const TITLE = "AstroLog — Privacy Policy";
 const DESCRIPTION =
   "Privacy policy for AstroLog, the iOS observation logbook for amateur astronomers. We don't collect personal data.";
 const EFFECTIVE_DATE = "May 11, 2026";
-const CONTACT_EMAIL = "maximesaltet@hotmail.fr";
+const CONTACT_EMAIL = "maximesaltet@gmail.com";
 
 export const metadata: Metadata = {
   title: TITLE,

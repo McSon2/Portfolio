@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
 const APP_NAME = "AstroLog";
-const FALLBACK_EMAIL = "maximesaltet@hotmail.fr";
+const FALLBACK_EMAIL = "maximesaltet@gmail.com";
 const LAST_UPDATED = "May 11, 2026";
 const URL = "https://maximesaltet.com/astrolog/support";
 
