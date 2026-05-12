@@ -98,6 +98,15 @@ export const iosApps: IosApp[] = [
     language: "fr",
     year: "2026",
   },
+  {
+    slug: "pawdesk",
+    name: "Pawdesk",
+    tagline:
+      "Carnet pro pour toiletteurs canins indépendants — chiens, RDV récurrents, vaccins, route van, caisse.",
+    category: "Business",
+    language: "fr",
+    year: "2026",
+  },
 ];
 
 export function getOtherApps(currentSlug: string): IosApp[] {
