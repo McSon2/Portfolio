@@ -4,7 +4,7 @@ import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "Pawdesk";
 const PUBLISHER = "Maxime Saltet";
-const CONTACT_EMAIL = "maximesaltet@hotmail.fr";
+const CONTACT_EMAIL = "maximesaltet@gmail.com";
 const LAST_UPDATED = "12 mai 2026";
 const URL = "https://maximesaltet.com/pawdesk/support";
 

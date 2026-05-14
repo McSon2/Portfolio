@@ -7,7 +7,7 @@ const TITLE = "Brewly — Privacy Policy";
 const DESCRIPTION =
   "Privacy policy for Brewly, the iOS pour-over coffee timer. We don't collect personal data.";
 const EFFECTIVE_DATE = "May 6, 2026";
-const CONTACT_EMAIL = "maximesaltet@hotmail.fr";
+const CONTACT_EMAIL = "maximesaltet@gmail.com";
 
 export const metadata: Metadata = {
   title: TITLE,

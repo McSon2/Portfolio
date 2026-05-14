@@ -6,7 +6,7 @@ import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
 const APP_NAME = "Brewly";
 const CONTACT_EMAIL = "maximesaltet.brewly@gmail.com";
-const FALLBACK_EMAIL = "maximesaltet@hotmail.fr";
+const FALLBACK_EMAIL = "maximesaltet@gmail.com";
 const LAST_UPDATED = "May 6, 2026";
 const URL = "https://maximesaltet.com/brewly/support";
 
