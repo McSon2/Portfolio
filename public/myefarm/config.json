@@ -1,0 +1,7 @@
+{
+  "priceVarianceMin": 0.8,
+  "priceVarianceMax": 1.3,
+  "weekendBoostPercent": 20,
+  "notesFromDev": null,
+  "event": null
+}
