@@ -84,9 +84,8 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
+  // Icônes : conventions de fichiers app/favicon.ico, app/icon.svg et
+  // app/apple-icon.png — Next les déclare automatiquement.
   formatDetection: { email: false, address: false, telephone: false },
 };
 
