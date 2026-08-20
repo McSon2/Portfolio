@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
-const LAST_UPDATED = "May 9, 2026";
+const LAST_UPDATED = "August 20, 2026";
 const APP_NAME = "My E-Farm";
 const DEVELOPER = "Maxime Saltet";
 const CONTACT_EMAIL = "hello@maximesaltet.com";
@@ -10,7 +10,7 @@ const CONTACT_EMAIL = "hello@maximesaltet.com";
 export const metadata: Metadata = {
   title: "My E-Farm — Privacy Policy",
   description:
-    "Privacy policy for My E-Farm, a cosy iOS voxel farm game. We do not collect, store or share personal data.",
+    "Privacy policy for My E-Farm, a cosy iOS voxel farm game. What stays on your device, what Google AdMob collects for optional rewarded ads, and what iCloud and Game Center hold.",
   alternates: {
     canonical: "https://maximesaltet.com/myefarm/privacy",
   },
@@ -36,25 +36,83 @@ export default function MyEFarmPrivacy() {
         <div className="space-y-[35px] text-body leading-[1.55]">
           <Section title="01 — In short">
             <p>
-              <strong>{APP_NAME}</strong> does not collect, store, sell or
-              share any personal data. The app runs locally on your iPhone.
-              Your farm, your animals, your inventory and your purchase
-              history stay on your device.
+              <strong>{APP_NAME}</strong> has no server, no account and no
+              analytics. Your farm, your animals, your inventory and your
+              purchase history live on your iPhone and in your own iCloud.
             </p>
-          </Section>
-
-          <Section title="02 — Data we collect">
             <p>
-              <strong>None.</strong> {APP_NAME} does not include analytics,
-              ad networks, tracking SDKs or remote logging. There is no{" "}
-              {APP_NAME} server that receives any information from the app.
-              The App Tracking Transparency (ATT) prompt is not shown
-              because the app does not track you across other apps or
-              websites.
+              Three things do involve someone else, and only when you choose
+              them: <strong>Google AdMob</strong> if you watch an optional
+              rewarded ad, <strong>Game Center</strong> if you sign in for
+              the leaderboards, and a <strong>shared iCloud database</strong>{" "}
+              if you join a co-op. Each is detailed below. Refusing all three
+              costs you nothing but those features.
             </p>
           </Section>
 
-          <Section title="03 — Data stored on your device">
+          <Section title="02 — Rewarded advertising (Google AdMob)">
+            <p>
+              Since version 1.2.0, {APP_NAME} embeds the Google Mobile Ads
+              SDK for <strong>rewarded ads only</strong>. No ad ever plays on
+              its own: one plays only when you tap a button that states what
+              you get for watching. Buying{" "}
+              <em>Ferme sans publicité</em> removes them permanently and
+              still grants the same rewards.
+            </p>
+            <p>
+              Before any ad is requested, the app shows Google&apos;s{" "}
+              <strong>UMP consent form</strong> and, on iOS, the{" "}
+              <strong>App Tracking Transparency</strong> prompt. If you
+              refuse either, no personalised ad is served and nothing in the
+              game changes — the rewards are identical. A permanent{" "}
+              <em>privacy options</em> entry in the app&apos;s settings lets
+              you change your mind at any time.
+            </p>
+            <p>
+              When ads are enabled, Google may collect your{" "}
+              <strong>device identifier</strong>,{" "}
+              <strong>advertising data</strong> and{" "}
+              <strong>ad interactions</strong>, as declared in the app&apos;s{" "}
+              <code>PrivacyInfo.xcprivacy</code> manifest. Google acts as an
+              independent controller for this processing; see the{" "}
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:opacity-60"
+              >
+                Google privacy &amp; terms
+              </a>
+              . {APP_NAME} itself never receives, stores or reads any of it.
+            </p>
+          </Section>
+
+          <Section title="03 — iCloud, Game Center and co-ops">
+            <p>
+              <strong>Your save</strong> is mirrored to your{" "}
+              <em>private</em> iCloud database so your farm follows your
+              Apple Account across devices. Only you can read it — not the
+              developer, not other players. You can switch the sync off in
+              the app&apos;s settings.
+            </p>
+            <p>
+              <strong>Game Center</strong> is optional. If you sign in, Apple
+              submits three scores under your Game Center identity: farm
+              value, debt repaid and longest streak. Apple handles that
+              identity; the app never sees your Apple Account email.
+            </p>
+            <p>
+              <strong>Co-ops</strong> use a shared iCloud database. Joining
+              one publishes your Game Center display name (or an anonymous
+              &ldquo;Ferme #XXXX&rdquo; label if you are not signed in), your
+              weekly contribution and your farm score to the other members of
+              that co-op — nothing else. Leaving a co-op deletes your
+              membership record. There is no chat and no way to send anything
+              other than a one-tap helping hand.
+            </p>
+          </Section>
+
+          <Section title="04 — Data stored on your device">
             <ul className="space-y-[8px] list-disc ml-[20px]">
               <li>
                 Your farm: coins, debt remaining, storage level, current
@@ -67,12 +125,17 @@ export default function MyEFarmPrivacy() {
                 health state.
               </li>
               <li>
-                Your inventory: eggs, milk, chicken food, rabbit food, hay
-                and water, with quantities and (for milk) expiry dates.
+                Your inventory: eggs, milk, feed, hay, water, brushes, med
+                kits, seeds and harvested produce, with quantities and (for
+                milk) expiry dates.
+              </li>
+              <li>
+                Your fields, your orchard schedule and your daily quests.
               </li>
               <li>
                 Your progression: eggs sold, milk sold, adult rabbits raised,
-                debt repaid, storage level reached, level-1 completion date.
+                chicks hatched, debt repaid, storage level reached, level
+                completion dates, achievements and daily streak.
               </li>
               <li>
                 Your transaction history (in-game sales, purchases,
@@ -88,42 +151,47 @@ export default function MyEFarmPrivacy() {
               </li>
             </ul>
             <p>
-              All of this is stored locally using Apple&apos;s SwiftData
-              framework, inside the app sandbox. We never see it.
+              All of this is stored using Apple&apos;s SwiftData framework
+              inside the app sandbox, and mirrored to your private iCloud
+              database unless you turn the sync off. We never see it.
             </p>
           </Section>
 
-          <Section title="04 — Purchases">
+          <Section title="05 — Purchases">
             <p>
               {APP_NAME} sells four consumable coin packs (Petite bourse,
-              Bourse fermière, Coffre fermier, Grand coffre) processed by
-              Apple via StoreKit&nbsp;2. Apple handles your payment
+              Bourse fermière, Coffre fermier, Grand coffre) and one
+              non-consumable ad-removal purchase (Ferme sans publicité),
+              processed by Apple via StoreKit&nbsp;2. Apple handles your payment
               information; we only receive a confirmation that the purchase
               succeeded so the app can credit the écus to your save. We
               never see your card or Apple Account email.
             </p>
             <p>
               Coin packs are <strong>consumables</strong>: once spent in
-              game, they are not restorable. The standard{" "}
-              <em>Restore Purchases</em> button is available in the shop for
-              compliance, but Apple does not return consumables — this is by
-              design across all iOS games and is not a {APP_NAME} choice.
+              game, they are not restorable. The ad-removal purchase is a{" "}
+              <strong>non-consumable</strong> and does restore, from the{" "}
+              <em>Restaurer les achats</em> button in the shop. Apple never
+              returns consumables — this is by design across all iOS games
+              and is not a {APP_NAME} choice.
             </p>
           </Section>
 
-          <Section title="05 — Notifications">
+          <Section title="06 — Notifications">
             <p>
               {APP_NAME} can schedule a single daily local reminder
               (&ldquo;Ta ferme t&rsquo;attend&rdquo;), only after you grant
               permission during the onboarding flow. The notification is
-              scheduled and fired entirely on your device — Apple Push
-              Notification Service is not used, and no notification server
-              exists. You can disable notifications any time from iOS
+              scheduled and fired entirely on your device — no notification
+              server exists. (The app does declare the remote-notification
+              background mode: iCloud uses it to tell the device that your
+              own save changed on another device. It never carries a message
+              from us.) You can disable notifications any time from iOS
               Settings.
             </p>
           </Section>
 
-          <Section title="06 — Required Reason API disclosures">
+          <Section title="07 — Required Reason API disclosures">
             <p>
               {APP_NAME} declares the following Required Reason APIs in its{" "}
               <code>PrivacyInfo.xcprivacy</code> manifest, all used for
@@ -154,12 +222,16 @@ export default function MyEFarmPrivacy() {
             </ul>
           </Section>
 
-          <Section title="07 — Children">
+          <Section title="08 — Children">
             <p>
               {APP_NAME} is rated 4+ on the App Store. It contains no
-              violence, no chat, no user-to-user communication, no social
-              feed, no external links to third-party services, and no
-              interactive features that could put a child at risk.
+              violence, no chat and no user-to-user messaging: inside a
+              co-op, the only thing a player can send another is a one-tap
+              helping hand, and the only text shown is a Game Center display
+              name. The app does display third-party rewarded ads, which is
+              why it is not enrolled in Apple&apos;s Kids Category, and it
+              may link out to a community Discord room, which is subject to
+              Discord&apos;s own age rules.
             </p>
             <p>
               Coin pack purchases are gated by the standard iOS
@@ -167,16 +239,25 @@ export default function MyEFarmPrivacy() {
             </p>
           </Section>
 
-          <Section title="08 — Your rights (GDPR / CCPA)">
+          <Section title="09 — Your rights (GDPR / CCPA)">
             <p>
-              Because we do not collect personal data, there is nothing for
-              us to access, correct, export or erase on your behalf. You can
-              delete all of your local data at any time by removing the app
-              from your device. iOS will purge the entire app sandbox.
+              We hold no account and no server-side profile, so there is
+              nothing on our side to access, correct or export. To erase
+              everything, use <em>Réglages → Réinitialiser ta ferme</em>{" "}
+              inside the app: it deletes the local save, the iCloud copy and
+              your co-op membership. Removing the app also purges the local
+              sandbox.
+            </p>
+            <p>
+              For advertising data, Google is the controller: use the
+              app&apos;s permanent <em>privacy options</em> entry to withdraw
+              your consent, iOS Settings → Privacy &amp; Security → Tracking
+              to revoke App Tracking Transparency, and Google&apos;s own
+              policy for any request concerning data it holds.
             </p>
           </Section>
 
-          <Section title="09 — Changes">
+          <Section title="10 — Changes">
             <p>
               If we change this policy, the updated version will be posted
               at this URL with a new &quot;Last updated&quot; date. Material
@@ -184,7 +265,7 @@ export default function MyEFarmPrivacy() {
             </p>
           </Section>
 
-          <Section title="10 — Contact">
+          <Section title="11 — Contact">
             <p>
               Questions about this policy? Email{" "}
               <a

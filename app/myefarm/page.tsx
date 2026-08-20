@@ -11,7 +11,7 @@ const URL = "https://maximesaltet.com/myefarm";
 // const APP_STORE_URL = "https://apps.apple.com/app/idXXXXXXXXX";
 
 const TITLE = `${APP_NAME} — Cosy Voxel Farm Game for iOS`;
-const DESCRIPTION = `${APP_NAME} is a cosy voxel farm game for iPhone. Raise chicks, rabbits and a milk cow, sell at the market, repay your debt and grow your little farm one day at a time. Solo, offline, no ads.`;
+const DESCRIPTION = `${APP_NAME} is a cosy voxel farm game for iPhone. Raise hens, rabbits and cattle, brood your own chicks, sell at the market, repay your debt and grow your little farm one day at a time. No forced ads, no timers, iCloud sync.`;
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -43,7 +43,8 @@ export default function MyEFarmPage() {
           the cow, sell eggs at the market, repay the bank, and watch your
           herd grow one cosy day at a time. {APP_NAME} is solo, offline, and
           nostalgic — built for the 90&nbsp;seconds you spend on the bus and
-          the daily check-in that pulls you back.
+          the daily check-in that pulls you back. Play it entirely on your
+          own, or join a village of farmers when you feel like it.
         </p>
 
         <Section title="01 / Who it's for">
@@ -56,7 +57,7 @@ export default function MyEFarmPage() {
           </p>
         </Section>
 
-        <Section title="02 / What's in level 1">
+        <Section title="02 / What you actually do">
           <h3 className="font-display text-[18px] mt-[15px] mb-[10px]">
             A real cosy gameplay loop
           </h3>
@@ -71,23 +72,26 @@ export default function MyEFarmPage() {
             Animals you actually get to know
           </h3>
           <p>
-            You start with 4 chicks, 8 baby rabbits and 1 cow. After three
-            days, the chicks become 3 hens and 1 rooster. The babies become
-            adult rabbits — at least one male and one female, guaranteed —
-            and start breeding. Your farm grows by itself if you take care of
-            it.
+            You start with a farm that already produces: 3 hens, a rooster,
+            two pairs of rabbits, two kits and a milk cow. Feed, water and
+            brush them — all four conditions matter — and they lay, milk and
+            breed from day one. Each rabbit couple rolls its own litter every
+            night, so a hutch you paid to expand actually grows faster. Put a
+            hen on a clutch and you raise your own chicks instead of buying
+            them.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
             A simple market, no spreadsheet required
           </h3>
           <p>
-            Fixed prices — eggs at 5 écus, milk at 4, hens at 100, roosters
-            at 120, rabbits at 70. Two tabs: <em>Acheter</em> for buying
-            young or adult animals and supplies, <em>Vendre</em> for
-            offloading your production and excess animals. No daily
-            wiggle, no waiting for &ldquo;the right moment&rdquo; — just
-            tap and sell.
+            Prices move every day around a median — eggs at 5 écus, milk at
+            4, rabbits at 70 — between −40% and +40%, with a badge showing
+            the day&rsquo;s variation and a boost on weekends. Two tabs:{" "}
+            <em>Acheter</em> for animals and supplies, <em>Vendre</em> for
+            your production, your surplus animals and the gear you no longer
+            need. Selling on a good day is worth something; you never have to
+            optimise a spreadsheet.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
@@ -95,10 +99,11 @@ export default function MyEFarmPage() {
           </h3>
           <p>
             Level 1 ends when you&rsquo;ve cleared a 5000-écu debt, sold 80
-            eggs, sold 80 litres of milk, raised 6 adult rabbits, upgraded
-            your storage and kept 500 écus aside. It takes about 30 cosy
-            sessions for a free player. Long enough to feel earned, short
-            enough to stay engaging.
+            eggs and 80 litres of milk, raised 6 adult rabbits, upgraded your
+            storage and kept 500 écus aside — around two weeks of cosy
+            sessions. Each level after that opens new ground (fields, cattle
+            and butter, then the orchard, then the beehive) and a new
+            expansion loan to clear. One level at a time, never two.
           </p>
         </Section>
 
@@ -123,12 +128,20 @@ export default function MyEFarmPage() {
           </p>
         </Section>
 
-        <Section title="04 / Privacy first, by construction">
+        <Section title="04 / Ads you choose, or none at all">
           <p>
-            {APP_NAME} does not collect data. No analytics, no telemetry, no
-            crash-reporting SDK, no advertising, no account, no server. Your
-            farm, your animals and your transactions stay on your iPhone —
-            that&rsquo;s it.
+            {APP_NAME} has <strong>no forced advertising</strong>: nothing
+            ever plays by itself. Rewarded ads exist behind buttons that say
+            what you get — doubling a sale, a free ration, re-rolling a daily
+            quest — and a one-off purchase removes them for good while still
+            granting the same rewards.
+          </p>
+          <p>
+            No analytics, no telemetry, no tracking SDK, no account to
+            create. Your farm lives on your iPhone and in your private
+            iCloud. The only data that ever leaves it is what you publish
+            yourself: your Game Center score if you sign in, and your weekly
+            contribution if you join a co-op.
           </p>
           <p>
             Read the full{" "}
@@ -145,8 +158,9 @@ export default function MyEFarmPage() {
         <Section title="05 / Designed for iOS, end to end">
           <Ul>
             <li>SwiftUI, built natively for iOS&nbsp;17+</li>
-            <li>SwiftData persistence, fully local</li>
-            <li>StoreKit&nbsp;2 for the in-app coin packs</li>
+            <li>SwiftData persistence, mirrored to your private iCloud</li>
+            <li>Game Center leaderboards and CloudKit co-ops, both optional</li>
+            <li>StoreKit&nbsp;2 for the coin packs and the ad-free purchase</li>
             <li>Local notifications, gentle reminders only — never marketing</li>
             <li>Light haptics on collect, sell and goal reached</li>
             <li>Voxel premium illustrations, hand-composed isometric scene</li>
@@ -159,9 +173,11 @@ export default function MyEFarmPage() {
             Mobile gaming is dominated by aggressive monetisation, three-pop-up
             sessions, and engagement loops that tax your attention. {APP_NAME}
             goes the other way: 90&nbsp;seconds in the morning, 90&nbsp;seconds
-            in the evening, no urgency, no leaderboard, no FOMO. Inspired by
-            the old browser farm games of the 2000s, rebuilt for 2026 iPhones
-            with proper voxel art and the calm of a single-player save.
+            in the evening, no urgency, no countdown, no FOMO. Leaderboards
+            and co-ops are there if you want them and invisible if you
+            don&rsquo;t. Inspired by the old browser farm games of the 2000s,
+            rebuilt for 2026 iPhones with proper voxel art and the calm of a
+            save that is yours alone.
           </p>
         </Section>
 
