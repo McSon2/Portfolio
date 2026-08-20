@@ -284,15 +284,15 @@ export default function MyEFarmSupportPage() {
             </li>
             <li>
               <strong>Remise → the «&nbsp;…&nbsp;» button on any line</strong>{" "}
-              — same resale, plus the option to simply throw things away when
-              storage is full.
+              — same buy-back, plus produce at the day&rsquo;s market price, plus
+              the option to simply throw things away when storage is full.
             </li>
           </Ul>
           <p>
-            Produce (eggs, milk, apples, butter, wheat, carrots) is not bought
-            back at a flat rate: it goes through the market at the
-            day&rsquo;s price. Buying to resell is always a loss — that is
-            deliberate.
+            Produce (eggs, milk, apples, butter, wheat, carrots) is never bought
+            back at a flat rate: it always sells at the day&rsquo;s market price,
+            whichever screen you sell it from. Buying to resell is always a loss
+            — that is deliberate.
           </p>
 
           <h3 className="font-display text-[18px] mt-[20px] mb-[10px]">
