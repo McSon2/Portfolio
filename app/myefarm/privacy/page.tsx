@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CrossAppNav } from "@/components/layout/CrossAppNav";
 
-const LAST_UPDATED = "August 20, 2026";
+const LAST_UPDATED = "September 17, 2026";
 const APP_NAME = "My E-Farm";
 const DEVELOPER = "Maxime Saltet";
 const CONTACT_EMAIL = "hello@maximesaltet.com";
@@ -159,8 +159,8 @@ export default function MyEFarmPrivacy() {
 
           <Section title="05 — Purchases">
             <p>
-              {APP_NAME} sells four consumable coin packs (Petite bourse,
-              Bourse fermière, Coffre fermier, Grand coffre) and one
+              {APP_NAME} sells four consumable coin packs (Poignée d&rsquo;écus,
+              Bas de laine, Sacoche du marché, Trésor de la grange) and one
               non-consumable ad-removal purchase (Ferme sans publicité),
               processed by Apple via StoreKit&nbsp;2. Apple handles your payment
               information; we only receive a confirmation that the purchase

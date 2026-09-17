@@ -422,8 +422,8 @@ export default function MyEFarmSupportPage() {
             What do the coin packs unlock?
           </h3>
           <p>
-            Nothing exclusive. The four packs (Petite bourse 250 écus, Bourse
-            fermière 700, Coffre fermier 1500, Grand coffre 3500) only give
+            Nothing exclusive. The four packs (Poignée d&rsquo;écus 250 écus, Bas
+            de laine 700, Sacoche du marché 1500, Trésor de la grange 3500) only give
             écus. Several level goals — selling eggs, raising rabbits, playing
             days — <strong>cannot</strong> be skipped with money, by design.
             They are one-time consumables: no subscription, no renewal, no

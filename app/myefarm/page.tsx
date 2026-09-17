@@ -116,10 +116,10 @@ export default function MyEFarmPage() {
             to play the days, sell the eggs, raise the rabbits).
           </p>
           <Ul>
-            <li>Petite bourse — 250 écus, 0,99&nbsp;€</li>
-            <li>Bourse fermière — 700 écus, 2,99&nbsp;€</li>
-            <li>Coffre fermier — 1500 écus, 5,99&nbsp;€</li>
-            <li>Grand coffre — 3500 écus, 11,99&nbsp;€</li>
+            <li>Poignée d&rsquo;écus — 250 écus, 0,99&nbsp;€</li>
+            <li>Bas de laine — 700 écus, 2,99&nbsp;€</li>
+            <li>Sacoche du marché — 1500 écus, 5,99&nbsp;€</li>
+            <li>Trésor de la grange — 3500 écus, 11,99&nbsp;€</li>
           </Ul>
           <p>
             No subscription, no loot box, no random rewards, no banner that
