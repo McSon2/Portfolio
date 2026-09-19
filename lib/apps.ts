@@ -27,15 +27,6 @@ export const iosApps: IosApp[] = [
     year: "2026",
   },
   {
-    slug: "myefarm",
-    name: "My E-Farm",
-    tagline:
-      "Cosy voxel farm game — raise chicks, milk the cow, grow your little farm.",
-    category: "Game",
-    language: "en",
-    year: "2026",
-  },
-  {
     slug: "pomostudy",
     name: "PomoStudy",
     tagline:

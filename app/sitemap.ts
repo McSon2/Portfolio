@@ -123,24 +123,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://maximesaltet.com/myefarm",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://maximesaltet.com/myefarm/privacy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: "https://maximesaltet.com/myefarm/support",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
       url: "https://maximesaltet.com/dadcopilot",
       lastModified: new Date(),
       changeFrequency: "monthly",
