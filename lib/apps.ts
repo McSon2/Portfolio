@@ -107,6 +107,15 @@ export const iosApps: IosApp[] = [
     language: "en",
     year: "2026",
   },
+  {
+    slug: "reste",
+    name: "Reste",
+    tagline:
+      "Dépenses du compte joint et pointage bancaire — saisie en deux gestes, récurrences, solde projeté, import CSV à deux.",
+    category: "Finance",
+    language: "fr",
+    year: "2026",
+  },
 ];
 
 export function getOtherApps(currentSlug: string): IosApp[] {
