@@ -99,15 +99,6 @@ export const iosApps: IosApp[] = [
     year: "2026",
   },
   {
-    slug: "glimmer",
-    name: "Glimmer",
-    tagline:
-      "Liquid Glass virtual pet — abstract iOS-native creature with 8-gene DNA, mutations, and quiet daily care.",
-    category: "Game",
-    language: "en",
-    year: "2026",
-  },
-  {
     slug: "reste",
     name: "Reste",
     tagline:

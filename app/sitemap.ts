@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://maximesaltet.com/nautile",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://maximesaltet.com/apps",
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -234,24 +240,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://maximesaltet.com/sofafin/privacy",
       lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: "https://maximesaltet.com/glimmer",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://maximesaltet.com/glimmer/privacy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      url: "https://maximesaltet.com/glimmer/support",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
       priority: 0.5,
     },
     {

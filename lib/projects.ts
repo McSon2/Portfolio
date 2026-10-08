@@ -13,6 +13,31 @@ export type Project = {
 export const projects: Project[] = [
   {
     number: "01",
+    title: "NAUTILE",
+    url: "https://maximesaltet.com/nautile",
+    badge: "macOS · Signed & notarized",
+    tagline: "Espace de travail macOS natif pour Claude Code — chaque projet à un clic d'une session",
+    year: "2026",
+    role: "Solo · Conception · Dev",
+    stack: [
+      "Tauri 2",
+      "Rust",
+      "Svelte 5",
+      "xterm.js",
+      "portable-pty",
+      "Claude Code hooks",
+      "Unix sockets",
+      "TypeScript",
+    ],
+    highlights: [
+      "Tous les projets d'un développeur, classés par catégorie, chacun à un clic d'une session Claude Code ou d'un terminal déjà dans le bon dossier.",
+      "État en direct de chaque session Claude (en cours, en attente de réponse, inactive) grâce aux hooks de Claude Code relayés à l'app par socket Unix.",
+      "Reprise de n'importe quelle conversation, notifications natives, statut git par projet et ouverture rapide au clavier (⌘P).",
+      "App native signée Developer ID et notarisée par Apple, un vrai PTY par onglet avec rendu WebGL et contrôle de flux.",
+    ],
+  },
+  {
+    number: "02",
     title: "ANTHOSAURE",
     url: "https://anthosaure.com",
     tagline: "Plateforme de social-gaming — économie virtuelle temps réel",
@@ -40,7 +65,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "02",
+    number: "03",
     title: "LOCMANAGE",
     url: "https://apps.apple.com/fr/app/locmanage-gestion-locative/id6748564235",
     badge: "iOS · Live on App Store",
@@ -67,7 +92,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     title: "SSPILOT",
     url: "https://sspilot.cc",
     tagline: "App desktop multi-OS — automation casino haut de gamme",
